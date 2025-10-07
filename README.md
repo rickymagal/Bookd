@@ -27,31 +27,10 @@ O **Bookd** é um aplicativo Android (Play Store) para registrar leituras (livro
 ```
 .
 ├─ docs/
-│  └─ Bookd - Engenharia de Documentos/   # Projeto LaTeX com especificação (requisitos, casos de uso, classes, dicionário)
+│  └─ Bookd - Engenharia de Documentos.pdf   # Projeto LaTeX com especificação (requisitos, casos de uso, classes, dicionário)
 └─ README.md
 ```
 > Observação: ao longo do projeto, novas pastas serão criadas (`android/`, `backend/`, `infra/`, etc.).
-
-## 📄 Documentação (LaTeX)
-O documento principal está em `docs/Bookd - Engenharia de Documentos`.
-- **Compilar** (exemplo):
-  ```bash
-  # No diretório do projeto
-  cd "docs/Bookd - Engenharia de Documentos"
-  latexmk -pdf -interaction=nonstopmode main.tex
-  ```
-- **Imagens (PlantUML)**: gerar PNG para diagramas (`*.puml`).
-  ```bash
-  # Exemplo geral
-  plantuml -tpng -o figuras caminho/para/arquivo.puml
-  # Alguns alvos típicos (ajuste nomes conforme seus arquivos)
-  plantuml -tpng -o figuras "Bookd - Subsistemas.puml"
-  plantuml -tpng -o figuras "Bookd - UC - *.puml"
-  plantuml -tpng -o figuras "Bookd - CLASS - *.puml"
-  ```
-- **Dicas LaTeX**:
-  - Use colunas `p{...}` em `longtable` e `\allowbreak{}` em termos longos (ex.: `Recommendation\allowbreak{}Item (1..\allowbreak*)`).
-  - Se precisar, aplique `\begingroup\sloppy ... \endgroup` em seções com tabelas extensas.
 
 ## ✅ Requisitos (resumo)
 - **Funcionais (exemplos):**
